@@ -41,4 +41,6 @@ user_groups:
 - Visitors
 
 ---
-Burhan Ahmad Mudassar is a Ph.D candidate in the Gigascale Reliable and Energy-Efficient NanoSystems (GREEN) Lab at Georgia Institute of Technology
+Burhan Ahmad Mudassar is a Ph.D candidate in the Gigascale Reliable and Energy-Efficient NanoSystems (GREEN) Lab at Georgia Institute of Technology. His research interests include  developing novel paradigms for sensor control in smart cameras to achieve reliable task performance while conserving performance metrics such as bandwidth, power and energy. In addition, his research interests include developing deep learning based solutions to niche computer vision problems such as small object detection and moving camera action detection.
+
+His spare time is spent traveling (a shared passion with his wife), creating imaginary worlds for his two kids and mindlessly scrolling the daily news feed. Love all kinds of fiction especially fantasy, magic and whodunits but he wishes he had more time to read.
