@@ -3,7 +3,7 @@ title: Burhan Ahmad Mudassar
 authors:
 - admin
 superuser: true
-role: Professor of Artificial Intelligence
+role: Ph.D Student
 organizations:
 - name: Georgia Institute of Technology
   url: ''
