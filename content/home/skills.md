@@ -6,6 +6,11 @@ title = "Skills"
 weight = 30
 widget = "featurette"
 [[feature]]
+description = ""
+icon = "Python"
+icon_pack = "Fab"
+name = "Python"
+[[feature]]
 description = "90%"
 icon = "r-project"
 icon_pack = "fab"
