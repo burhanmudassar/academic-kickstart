@@ -11,7 +11,7 @@ email = "burhanahmadmudassar@gmail.com"
 font = ""
 font_size = "L"
 highlight = true
-highlight_languages = ["r"]
+highlight_languages = ["C++", "Python", "r"]
 highlight_superuser = false
 link_authors = true
 local_business_type = ""
@@ -82,7 +82,7 @@ share_alike = true
 [edit_page]
 content_dir = ""
 repo_branch = "master"
-repo_url = "https://github.com/gcushen/hugo-academic"
+repo_url = "https://github.com/burhanmudassar"
 [edit_page.editable]
 docs = true
 page = false
