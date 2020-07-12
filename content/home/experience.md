@@ -25,7 +25,7 @@ title = "Intern"
 [[experience]]
 company = "Center for Advanced Research in Engineering (CARE Pvt Ltd)"
 company_url = ""
-date_end = "08/08/2016"
+date_end = "08/08/2016 12:00 AM"
 date_start = "2020-05-18T04:00:00+00:00"
 description = ""
 location = "Islamabad, Pakistan"
