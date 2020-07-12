@@ -6,6 +6,11 @@ title = "Skills"
 weight = 30
 widget = "featurette"
 [[feature]]
+description = ""
+icon = "Verilog"
+icon_pack = "fab"
+name = ""
+[[feature]]
 description = "C++11"
 icon = "C++"
 icon_pack = "fab"
