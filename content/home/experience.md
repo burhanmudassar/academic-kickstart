@@ -15,12 +15,12 @@ description = "  Responsibilities include:    * ISP and DNN pipeline optimizatio
 location = "California"
 title = "Intern"
 [[experience]]
-company = "University X"
+company = "Georgia Institute of Technology"
 company_url = ""
-date_end = "2016-12-31"
-date_start = "2016-01-01"
-description = "Taught electronic engineering and researched semiconductor physics."
-location = "California"
-title = "Professor"
+date_end = ""
+date_start = "2017-01-01T05:00:00+00:00"
+description = "GREEN Lab"
+location = "Georgia"
+title = "Graduate Research Assistant"
 
 +++
