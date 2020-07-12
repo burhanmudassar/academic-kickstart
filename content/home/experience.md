@@ -17,7 +17,7 @@ title = "Graduate Research Assistant"
 [[experience]]
 company = "Samsung Semiconductor Inc."
 company_url = ""
-date_end = "05/01/2020 12:00 AM"
+date_end = ""
 date_start = "2020-01-13T05:00:00+00:00"
 description = "  Responsibilities include:    * ISP and DNN pipeline optimization* Quantization of Pytorch Models"
 location = "California"
