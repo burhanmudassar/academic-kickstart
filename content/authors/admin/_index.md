@@ -35,7 +35,7 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/burhanmudassar
-email: ''
+email: burhanahmadmudassar@gmail.com
 user_groups:
 - Researchers
 - Visitors
