@@ -2,7 +2,7 @@
 active = true
 headless = true
 subtitle = ""
-title = "Academic Kickstart"
+title = "Burhan Ahmad Mudassar"
 weight = 15
 widget = "blank"
 [advanced]
