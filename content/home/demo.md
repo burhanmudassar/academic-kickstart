@@ -11,7 +11,7 @@ css_style = ""
 [design]
 columns = "1"
 [design.background]
-gradient_end = "NavyBlue"
+gradient_end = "White"
 gradient_start = "Blue"
 text_color_light = true
 [design.spacing]
