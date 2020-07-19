@@ -5,7 +5,7 @@ publishDate: 2020-07-19T22:50:41.201195Z
 authors: ["Burhan A Mudassar", "Jong Hwan Ko", "Saibal Mukhopadhyay"]
 publication_types: ["1"]
 abstract: ""
-featured: false
+featured: true
 publication: "*2018 55th ACM/ESDA/IEEE Design Automation Conference (DAC)*"
 ---
 

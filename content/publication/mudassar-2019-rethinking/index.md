@@ -5,7 +5,7 @@ publishDate: 2020-07-19T22:50:41.276436Z
 authors: ["Burhan A Mudassar", "Saibal Mukhopadhyay"]
 publication_types: ["1"]
 abstract: ""
-featured: false
+featured: true
 publication: "*British Machine Vision Conference (BMVC)*"
 ---
 
