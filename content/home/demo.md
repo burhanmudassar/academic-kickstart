@@ -2,7 +2,7 @@
 active = true
 headless = true
 subtitle = ""
-title = "Burhan Ahmad Mudassar"
+title = ""
 weight = 15
 widget = "blank"
 [advanced]
