@@ -6,6 +6,11 @@ title = "Skills"
 weight = 30
 widget = "featurette"
 [[feature]]
+description = "2 years experience with RTL development on FPGA and Embedded DSP"
+icon = "microchip"
+icon_pack = "fas"
+name = "Embedded Development"
+[[feature]]
 description = "2 years experience with Pytorch/Tensorflow and 1 year experience with Caffe. Training and inference of computer vision models for object detection and action detection"
 icon = "brain"
 icon_pack = "fas"
