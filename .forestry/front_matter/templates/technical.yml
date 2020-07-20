@@ -1,4 +1,22 @@
 ---
 label: Technical
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: post
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Post
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
