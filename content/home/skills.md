@@ -8,7 +8,7 @@ widget = "featurette"
 [[feature]]
 description = "4 years experience with Python, 3 years experience with C/C++ including OOP concepts, 2 years experience with Verilog for FPGA programming "
 icon = "laptop-code"
-icon_pack = "fab"
+icon_pack = "fas"
 name = "Programming"
 [[feature]]
 description = "10%"
