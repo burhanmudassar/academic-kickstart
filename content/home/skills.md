@@ -16,9 +16,9 @@ icon = "laptop-code"
 icon_pack = "fas"
 name = "Programming"
 [[feature]]
-description = "10%"
-icon = "camera-retro"
+description = "Best practices for code management and versioning using Git"
+icon = "code-branch"
 icon_pack = "fas"
-name = "Photography"
+name = "Github"
 
 +++
