@@ -47,9 +47,9 @@ certificate_url = ""
 date_end = ""
 date_start = "2013-08-12T04:00:00+00:00"
 description = "Fulbright Scholarship for Masters Study at Georgia Tech"
-organization = "Fulbright"
+organization = "US Educational Foundation in Pakistan (USEFP)"
 organization_url = ""
-title = "Fulbright Scholar"
+title = "Fulbright Scholarship for Graduate Study"
 url = ""
 
 +++
