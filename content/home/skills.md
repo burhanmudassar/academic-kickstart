@@ -6,20 +6,10 @@ title = "Skills"
 weight = 30
 widget = "featurette"
 [[feature]]
-description = ""
-icon = "Verilog"
+description = "4 years experience with Python, 3 years experience with C/C++ including OOP concepts, 2 years experience with Verilog for FPGA programming "
+icon = "laptop-code"
 icon_pack = "fab"
-name = ""
-[[feature]]
-description = "C++11"
-icon = "C++"
-icon_pack = "fab"
-name = "cuttlefish"
-[[feature]]
-description = ""
-icon = "python"
-icon_pack = "fab"
-name = "Python"
+name = "Programming"
 [[feature]]
 description = "10%"
 icon = "camera-retro"
