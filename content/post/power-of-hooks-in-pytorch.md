@@ -28,9 +28,9 @@ Let's write the hook that will do apply the dropout. The hook takes in 3 argumen
 
 \`\`\`
 
-def dropout_hook(module, input, output):
+    def dropout_hook(module, input, output):
 
-    output = torch.nn.functional.dropout2d(output, p=0.5, training=module.training, inplace=False)
+        output = torch.nn.functional.dropout2d(output, p=0.5, training=module.training, inplace=False)
 
 \`\`\`
 
@@ -38,13 +38,13 @@ Now that the hook is ready, we need to register it to the model itself. The way 
 
 \`\`\`
 
-def register_hook(self, module):
+    def register_hook(self, module):
 
-if isinstance(module, nn.Conv2d):
+         if isinstance(module, nn.Conv2d):
 
- module.register_forward_hook(dropout_hook)
+              module.register_forward_hook(dropout_hook)
 
-model.apply(register_hook)
+    model.apply(register_hook)
 
 \`\`\`
 
