@@ -20,4 +20,3 @@ text_color_light = true
 padding = ["20px", "0", "20px", "0"]
 
 +++
-Welcome to my homepage 
