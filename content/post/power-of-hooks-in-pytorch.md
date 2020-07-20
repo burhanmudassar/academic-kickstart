@@ -29,7 +29,6 @@ Let's write the hook that will do apply the dropout. The hook takes in 3 argumen
 ```
 def dropout_hook(module, input, output):
 	output = torch.nn.functional.dropout2d(output, p=0.5, training=module.training, inplace=False)
-
 ```
 
 Now that the hook is ready, we need to register it to the model itself. The way to do that is to call the `register_forward_hook` method of the module with the handle of the `dropout_hook`. This will add the dropout hook to every layer of the model. We only need to add this to the output of the convolutional layers. For that we create another function called register_hook
@@ -40,7 +39,6 @@ def register_hook(self, module):
     	module.register_forward_hook(dropout_hook)
 
 model.apply(register_hook)
-
 ```
 
 The apply method is applied recursively to every nn.Module within the model so it is ensured that every conv2d layer will have the dropout hook added to it.
