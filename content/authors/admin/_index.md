@@ -7,7 +7,7 @@ role: Ph.D Student
 organizations:
 - name: Georgia Institute of Technology
   url: ''
-bio: My research interests include
+bio: ''
 interests:
 - Embedded Vision
 - Smart Cameras
