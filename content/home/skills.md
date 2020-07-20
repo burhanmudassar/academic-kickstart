@@ -22,4 +22,3 @@ icon_pack = "fas"
 name = "Photography"
 
 +++
-1. Python
