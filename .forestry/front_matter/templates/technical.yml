@@ -20,3 +20,10 @@ fields:
   type: tag_list
   default: []
   label: Tags
+- name: frontpic
+  type: file
+  config:
+    maxSize: 64
+  label: FrontPic
+pages:
+- content/project/small-object-detection.md
