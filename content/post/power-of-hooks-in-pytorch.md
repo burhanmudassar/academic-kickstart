@@ -34,7 +34,7 @@ def dropout_hook(module, input, output):
 
 \`\`
 
-Now that the hook is ready, we need to register it to the model itself. The way to do that is to call the \`\`\`register_forward_hook\`\`\` method of the module with the handle of the dropout_hook. This will add the dropout hook to every layer of the model. We only need to add this to the output of the convolutional layers. For that we create another function called register_hook
+Now that the hook is ready, we need to register it to the model itself. The way to do that is to call the `register`_`forward`_`hook` method of the module with the handle of the '`dropout_hook\`. This will add the dropout hook to every layer of the model. We only need to add this to the output of the convolutional layers. For that we create another function called register_hook
 
 \`\`
 
