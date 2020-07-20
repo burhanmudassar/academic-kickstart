@@ -26,4 +26,4 @@ fields:
     maxSize: 64
   label: FrontPic
 pages:
-- content/project/small-object-detection.md
+- content/post/power-of-hooks-in-pytorch.md
