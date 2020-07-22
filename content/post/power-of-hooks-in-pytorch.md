@@ -1,8 +1,9 @@
 +++
-create-date = 2020-07-22T04:00:00Z
+create-date = "2020-07-22T04:00:00+00:00"
 draft = true
 frontpic = ""
 post = ""
+publishDate = 2020-07-22T04:00:00Z
 tags = []
 title = "Power of Hooks in Pytorch"
 
