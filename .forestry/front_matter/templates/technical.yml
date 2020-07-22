@@ -25,5 +25,14 @@ fields:
   config:
     maxSize: 64
   label: FrontPic
+- name: create-date
+  type: datetime
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: create-date
 pages:
 - content/post/power-of-hooks-in-pytorch.md

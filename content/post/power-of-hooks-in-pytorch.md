@@ -1,4 +1,5 @@
 +++
+create-date = 2020-07-22T04:00:00Z
 draft = true
 frontpic = ""
 post = ""
@@ -14,11 +15,9 @@ Pytorch allows you to add custom function calls to its **module** and **tensor**
 2. The input to the module
 3. The output of the forward method
 
-```
-def dropout_hook(self, module, input, output):
-	output = F.dropout2d(output, self.prob, True, False)
-	return output
-```
+    def dropout_hook(self, module, input, output):
+    	output = F.dropout2d(output, self.prob, True, False)
+    	return output
 
 ## Why hooks?
 
@@ -26,7 +25,7 @@ Now that we know what hooks are, it's important to understand their use case. Mo
 
 ## Example: Adding Dropout to a CNN
 
-Let's demonstrate the power of hooks with an example of adding dropout after every conv2d layer of a CNN. 
+Let's demonstrate the power of hooks with an example of adding dropout after every conv2d layer of a CNN.
 
 ### Adding the Hook
 
@@ -66,36 +65,34 @@ The apply method is applied recursively to every nn.Module within the model so i
 
 ### Testing it Out
 
-To test it out let's import the vgg16 backbone from the torchvision package. We will apply a random input to the model and store it for reference. We will then apply our dropout hook and evaluate the model in both training and evaluation mode and compare the outputs. 
+To test it out let's import the vgg16 backbone from the torchvision package. We will apply a random input to the model and store it for reference. We will then apply our dropout hook and evaluate the model in both training and evaluation mode and compare the outputs.
 
-```
-import torch
-import torchvision
-# Load the pre-trained model
-model = torchvision.models.vgg16(pretrained=True)
-# Set to eval mode
-model.eval()
-
-# Create a random input vector and store the reference output
-x = torch.randn((1,3,224,224))
-refOut = model(x)
-
-# Instantiate the hook class and register the hook to the model
-dropout_ = DropoutHook(prob=0.2)
-model.apply(dropout_.register_hook)
-
-# Evaluate with the hooks enabled
-outWithDropout = model(x)
-
-# Remove the hook and re-evaluate
-dropout_.remove()
-outWithOutDropout = model(x)
-
-# Compare the outputs with the reference
-errDropoutModel = (outWithDropout - refOut).mean()
-errWithoutDropoutModel = (outWithOutDropout - refOut).mean()
-print("Dropout Model Error: {}, Non-dropout Model Error: {}".format(errDropoutModel, errWithoutDropoutModel))
-```
+    import torch
+    import torchvision
+    # Load the pre-trained model
+    model = torchvision.models.vgg16(pretrained=True)
+    # Set to eval mode
+    model.eval()
+    
+    # Create a random input vector and store the reference output
+    x = torch.randn((1,3,224,224))
+    refOut = model(x)
+    
+    # Instantiate the hook class and register the hook to the model
+    dropout_ = DropoutHook(prob=0.2)
+    model.apply(dropout_.register_hook)
+    
+    # Evaluate with the hooks enabled
+    outWithDropout = model(x)
+    
+    # Remove the hook and re-evaluate
+    dropout_.remove()
+    outWithOutDropout = model(x)
+    
+    # Compare the outputs with the reference
+    errDropoutModel = (outWithDropout - refOut).mean()
+    errWithoutDropoutModel = (outWithOutDropout - refOut).mean()
+    print("Dropout Model Error: {}, Non-dropout Model Error: {}".format(errDropoutModel, errWithoutDropoutModel))
 
 The output clearly shows that the dropout hook is changing the outputs of the conv2d layers.
 
@@ -108,5 +105,4 @@ The output clearly shows that the dropout hook is changing the outputs of the co
 
 ## References
 
-1. [https://python-3-patterns-idioms-test.readthedocs.io/en/latest/PythonDecorators.html](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/PythonDecorators.html) "Decorators in Python3")
-2. [http://funkyworklehead.blogspot.com/2008/12/how-to-decorate-init-or-another-python.html](http://funkyworklehead.blogspot.com/2008/12/how-to-decorate-init-or-another-python.html "Passing an object instance through a decorator")
+[https://pytorch.org/tutorials/beginner/former_torchies/nnft_tutorial.html#forward-and-backward-function-hooks](https://pytorch.org/tutorials/beginner/former_torchies/nnft_tutorial.html#forward-and-backward-function-hooks "Forward and Backward Function Hooks - Pytorch Tutorials")
