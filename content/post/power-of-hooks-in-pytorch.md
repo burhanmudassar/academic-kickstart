@@ -3,7 +3,7 @@ create-date = "2020-07-22T04:00:00+00:00"
 frontpic = ""
 post = ""
 publishDate = 2020-07-22T04:00:00Z
-tags = []
+tags = ["Pytorch", "Dropout"]
 title = "Power of Hooks in Pytorch"
 
 +++
