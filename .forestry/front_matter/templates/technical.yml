@@ -33,6 +33,6 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-  label: create-date
+  label: publishDate
 pages:
 - content/post/power-of-hooks-in-pytorch.md
