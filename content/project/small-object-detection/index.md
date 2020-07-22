@@ -1,13 +1,12 @@
 ---
 title: Small Object Detection
-date: '2020-07-20T18:40:06.000+00:00'
+date: 2020-07-20T18:40:06.000+00:00
 tags:
 - Deep Learning
 - " Object Detection"
 - Small Object Detection
 post: ''
 frontpic: "/uploads/comparison-results-strides-1.png"
-draft: true
 
 ---
 ![](/uploads/comparison-results-strides-1.png)
