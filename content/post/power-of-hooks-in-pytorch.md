@@ -68,26 +68,34 @@ The apply method is applied recursively to every nn.Module within the model so i
 
 To test it out let's import the vgg16 backbone from the torchvision package. We will apply a random input to the model and store it for reference. We will then apply our dropout hook and evaluate the model in both training and evaluation mode and compare the outputs. 
 
-    	import torch
-        import torchvision
-        model = torchvision.models.vgg16(pretrained=True)
-    
-        model.eval()
-           
-        x = torch.randn((1,3,224,224))
-        refOut = model(x)
-    
-        dropout_ = DropoutHook(prob=0.2)
-        model.apply(dropout_.register_hook)
-    
-        outWithDropout = model(x)
-        
-        dropout_.remove()
-        outWithOutDropout = model(x)
-    
-        errDropoutModel = (outWithDropout - refOut).mean()
-        errWithoutDropoutModel = (outWithOutDropout - refOut).mean()
-        print("Dropout Model Error: {}, Non-dropout Model Error: {}".format(errDropoutModel, errWithoutDropoutModel))
+```
+import torch
+import torchvision
+# Load the pre-trained model
+model = torchvision.models.vgg16(pretrained=True)
+# Set to eval mode
+model.eval()
+
+# Create a random input vector and store the reference output
+x = torch.randn((1,3,224,224))
+refOut = model(x)
+
+# Instantiate the hook class and register the hook to the model
+dropout_ = DropoutHook(prob=0.2)
+model.apply(dropout_.register_hook)
+
+# Evaluate with the hooks enabled
+outWithDropout = model(x)
+
+# Remove the hook and re-evaluate
+dropout_.remove()
+outWithOutDropout = model(x)
+
+# Compare the outputs with the reference
+errDropoutModel = (outWithDropout - refOut).mean()
+errWithoutDropoutModel = (outWithOutDropout - refOut).mean()
+print("Dropout Model Error: {}, Non-dropout Model Error: {}".format(errDropoutModel, errWithoutDropoutModel))
+```
 
 The output clearly shows that the dropout hook is changing the outputs of the conv2d layers.
 
