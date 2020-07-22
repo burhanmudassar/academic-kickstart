@@ -16,9 +16,11 @@ Pytorch allows you to add custom function calls to its **module** and **tensor**
 2. The input to the module
 3. The output of the forward method
 
-    def dropout_hook(self, module, input, output):
-    	output = F.dropout2d(output, self.prob, True, False)
-    	return output
+```
+def dropout_hook(self, module, input, output):
+    output = F.dropout2d(output, self.prob, True, False)
+    return output
+```
 
 ## Why hooks?
 
