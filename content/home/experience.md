@@ -32,3 +32,4 @@ location = "Islamabad, Pakistan"
 title = "Sr. Design Engineer"
 
 +++
+As part of the Software Defined Radio Group, my responsibilities include system development, debugging and implementation of proprietary waveforms on multiple platforms including DSPs and FPGAs. Some of the tasks that I have completed are: - Hardware/Software Co-Design of waveform transceivers on FPGA+DSP - Implemented CPM Coarse Timing Recovery, Carrier Phase and Frequency Offset Module in FPGA - Implemented GMSK Frequency Hopping Modulator on TI TMS320C64X DSP
