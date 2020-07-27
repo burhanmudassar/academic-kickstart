@@ -20,10 +20,5 @@ description = "4 years experience with Python, 3 years experience with C/C++ inc
 icon = "laptop-code"
 icon_pack = "fas"
 name = "Programming"
-[[feature]]
-description = "Best practices for code management and versioning using Git"
-icon = "code-branch"
-icon_pack = "fas"
-name = "Github"
 
 +++
