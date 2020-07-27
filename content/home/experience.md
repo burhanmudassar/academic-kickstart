@@ -27,7 +27,7 @@ company = "Center for Advanced Research in Engineering (CARE Pvt Ltd)"
 company_url = ""
 date_end = "2016-08-08T05:00:00+00:00"
 date_start = "2015-05-18T04:00:00+00:00"
-description = ""
+description = "As part of the Software Defined Radio Group, my responsibilities include system development, debugging and implementation of proprietary waveforms on multiple platforms including DSPs and FPGAs. Some of the tasks that I have completed are: - Hardware/Software Co-Design of waveform transceivers on FPGA+DSP - Implemented CPM Coarse Timing Recovery, Carrier Phase and Frequency Offset Module in FPGA - Implemented GMSK Frequency Hopping Modulator on TI TMS320C64X DSP"
 location = "Islamabad, Pakistan"
 title = "Sr. Design Engineer"
 
